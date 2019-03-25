@@ -177,7 +177,7 @@
                 // have more than 1 button of that class
                 document.getElementsByClassName("stripe-button-el")[0].style.display = 'none';
             </script>
-            <div class="g-recaptcha" data-sitekey="6Lf7JJcUAAAAAFoGep44nkNFlO8WflezP9BpDrr_"></div>
+
 
             <button type="submit" class="primary-btn order-submit" form="form1" <?php if($_SESSION['panier'] == NULL){ ?> disabled  <?php } ?>>Commander</button>
         </div>
@@ -193,7 +193,6 @@
 <script>
     Stripe.setPublishableKey('pk_live_yYPJCL4G9dpGbyJIxW3h8mes\n');
 </script>
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 
 <?php require 'footer.php'; ?>
