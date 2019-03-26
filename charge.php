@@ -11,7 +11,7 @@ use PHPMailer\PHPMailer\Exception;
 use chillerlan\QRCode\QRCode;
 use chillerlan\QRCode\QROptions;
 
-
+// Fonction temporaire pour scan billet
 function str_random($length){
     $alphabet = "0123456789azertyuiopqsdfghjklmwxcvbnAZERTYUIOPQSDFGHJKLMWXCVBN";
     return substr(str_shuffle(str_repeat($alphabet, $length)), 0, $length);
@@ -39,10 +39,13 @@ $charge = \Stripe\Charge::create(['customer' => $customer->id, 'amount' => str_r
 $verif = $db->query('SELECT * FROM customers WHERE mail=:mail', array(
     'mail' => htmlspecialchars($_POST['email'])
 ));
+// Verification si le client existe deja
 if ($verif)
 {
 
 }
+
+// Mis à jour database client
 else
 {
     $customers = $db->query('INSERT INTO customers (last_name, first_name, mail, city) VALUES (:lastName,:firstName,:mail,:city)', array(
@@ -57,6 +60,8 @@ $keys = $db->query('SELECT id FROM customers WHERE mail=:mail', array(
     'mail' => htmlspecialchars($_POST['email'])
 ));
 
+
+// Mis à jour database des commandes
 foreach ($keys as $key)
 {
     $commands = $db->query('INSERT INTO commands (id_client,total,commandDate, comment) VALUES (:idClient,:total,NOW(),:comment)', array(
@@ -160,6 +165,8 @@ $dateCommands = $db->query('SELECT * FROM commands WHERE id=:id', array(
     'id' => $command
 ));
 
+
+// Generation du billet
 for ($i = 0;$i < $billax;$i++)
 {
         $token = str_random(60);
@@ -177,22 +184,10 @@ for ($i = 0;$i < $billax;$i++)
     $idTicket = $db->lastInsertId();
     $data = 'https://billetterie.agencelads.com/scan.php?token='.$token.'&ticket='.$idTicket.'';
     $billet = new Dompdf();
-    $html = '';
-    $html .= '<style>
-body{
-font-family: \'Lucida Console\', monospace;
-}
-span{
-font-family: \'Lucida Console\', monospace;
-}
-h2{
-font-family: \'billet\', sans-serif;
-}
-table{
-border-radius:5px;
-}
 
-</style>';
+
+    // Contenu du billet
+    $html = '';
     $html .= '<html>';
     $html .= '<head>';
     $html .= '	<title></title>';
@@ -265,6 +260,8 @@ foreach ($dateCommands as $dateCommand) {
     $path = 'billet/commande_'.$command.'_'.htmlspecialchars($_POST['lastName']).'_'.htmlspecialchars($_POST['firstName']).'/billet(' . $numBillet++ . ')_' . $command . '.pdf';
 
 
+
+    // Organisation dossier
     if (!file_exists($createPath)) {
         mkdir($createPath);
     }
@@ -281,22 +278,20 @@ foreach ($dateCommands as $dateCommand) {
 <?php
 try
 {
-    $email = new PHPMailer(true); // Passing `true` enables exceptions
-    //Server settings
+    // Envoi email
+    $email = new PHPMailer(true);
 
-    //Recipients
     $email->setFrom('contact@agencelads.com', 'Agence la DS');
-    $email->addAddress($mail); // Name is optionnal
-    //Attachments
+    $email->addAddress($mail);
     $numBillet = 1;
     $numClient = 1;
     for ($i = 0;$i < $billax;$i++)
     {
+        // Ajout pièce jointe
         $email->addAttachment($path, 'Billet_' . $numClient++ . '.pdf'); // Optional name
 
     }
 
-    //Content
     $email->isHTML(true); // Set email format to HTML
     $email->Subject = 'Votre billet !';
     $email->Body = 'This is the HTML message body <b>in bold!</b>';
@@ -311,8 +306,8 @@ catch(Exception $e)
 
 }
 catch(\Exception $e)
-{ //The leading slash means the Global PHP Exception class will be caught
-    echo $e->getMessage(); //Boring error messages from anything else!
+{
+    echo $e->getMessage();
 
 }
 

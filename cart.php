@@ -107,6 +107,7 @@
                 <!-- Notre boite de vérification -->
 
                 <?php
+                // Affichage des éléments présents dans le panier
                 $ids = array_keys($_SESSION['panier']);
                 if (empty($ids)) {
                     $prices = array();
