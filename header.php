@@ -78,7 +78,7 @@ if(!isset($_SESSION['panier'])){
                 <div class="col-md-3">
                     <div class="header-logo">
                         <a href="#" class="logo">
-                            <a href="controller/index.php"><img src="./img/logo.png" alt=""></a>
+                            <a href="index.php"><img src="./img/logo.png" alt=""></a>
                         </a>
                     </div>
                 </div>
@@ -90,7 +90,7 @@ if(!isset($_SESSION['panier'])){
                     <div class="header-ctn">
                         <!-- Cart -->
                         <div class="dropdown">
-                            <a href="controller/cart.php?checkout" >
+                            <a href="cart.php?checkout" >
                                 <i class="fa fa-shopping-cart" ></i>
                                 <span>Votre panier</span>
                                 <?php if(isset($_SESSION['panier'])): ?>
@@ -132,12 +132,12 @@ if(!isset($_SESSION['panier'])){
                 <div class="alert alert-success checkout" role="alert">
                     <button type="button" class="close" data-dismiss="alert"><i class="far fa-times-circle"></i></button>
                     <h4 class="alert-heading">Billet(s) ajouté(s) au panier !</h4>
-                    <p>Finalisez votre commande en allant <a href="controller/cart.php?checkout">dans votre panier. </a></p>
+                    <p>Finalisez votre commande en allant <a href="cart.php?checkout">dans votre panier. </a></p>
                 </div>
             <?php } ?>
 
             <ul class="main-nav nav navbar-nav">
-                <li class="active"><a href="controller/index.php">Accueil</a></li>
+                <li class="active"><a href="index.php">Accueil</a></li>
 
             </ul>
             <!-- /NAV -->

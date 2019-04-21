@@ -64,7 +64,7 @@
                 <div class="col-md-3">
                     <div class="header-logo">
                         <a href="#" class="logo">
-                            <a href="controller/index.php"><img src="./img/logo.png" alt=""></a>
+                            <a href="index.php"><img src="./img/logo.png" alt=""></a>
                         </a>
                     </div>
                 </div>
@@ -103,7 +103,7 @@
         <div id="responsive-nav">
             <!-- NAV -->
             <ul class="main-nav nav navbar-nav">
-                <li class="active"><a href="controller/index.php">Accueil</a></li>
+                <li class="active"><a href="index.php">Accueil</a></li>
 
             </ul>
             <!-- /NAV -->
