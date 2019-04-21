@@ -1,6 +1,6 @@
 <?php
-require'_header.php';
-require_once ('./config.php');
+require '_header.php';
+require_once('./config.php');
 require_once 'vendor/autoload.php';
 require_once 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
 require 'vendor/phpmailer/phpmailer/src/Exception.php';

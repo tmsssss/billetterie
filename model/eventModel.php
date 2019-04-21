@@ -1,5 +1,5 @@
 <?php
-require'_header.php';
+require '_header.php';
 // Selection de l'evenement
 $events = $db->query('SELECT * FROM events WHERE id=:id', array('id' => $_GET['id']));
 

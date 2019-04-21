@@ -130,7 +130,7 @@
                         <div class="col-6">
                         </div>
                         <div class="col">
-                            <a href="addPanier.php?id_ticket=<?= $price->id; ?>"><button type="submit" class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Ajouter au panier</button></a>
+                            <a href="../addPanier.php?id_ticket=<?= $price->id; ?>"><button type="submit" class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Ajouter au panier</button></a>
                         </div>
                     </div>
                 </div>

@@ -16,7 +16,7 @@
                     </div>
                     <?php require_once('./config.php'); ?>
 
-                    <form action="charge.php?total=<?= $total ?>" method="post" id="form1">
+                    <form action="../controller/charge.php?total=<?= $total ?>" method="post" id="form1">
                         <div class="wrap-input100 validate-input form-group">
                             <input class="input100" type="text" name="firstName" placeholder="Prénom" required>
                             <span class="symbol-input100"><i class="fa fa-user" aria-hidden="true"></i></span>
@@ -99,7 +99,7 @@
                                 <div><?= $event->name;?> <br> <span style="font-size:18px;"><?=$price->name
                                         ?></span></div>
                                 <div>x<?=$_SESSION['panier'][$price->id]; ?></div>
-                                <div><?=number_format($price->price, 2, ',', ' '); ?> € <a href="cart.php?delPanier=<?=$price->id ?>" class="far fa-times-circle"></a></div>
+                                <div><?=number_format($price->price, 2, ',', ' '); ?> € <a href="../controller/cart.php?delPanier=<?=$price->id ?>" class="far fa-times-circle"></a></div>
                             </div>
                         </div>
                     <?php
