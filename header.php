@@ -1,4 +1,3 @@
-<?php require '_header.php'; ?>
 <?php if($_SESSION['panier'] == NULL) {
     unset($_SESSION['panier']);
 }

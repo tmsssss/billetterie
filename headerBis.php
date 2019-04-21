@@ -1,4 +1,3 @@
-<?php require '_header.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

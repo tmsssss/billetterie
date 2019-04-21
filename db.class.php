@@ -32,4 +32,9 @@ class DB{
     public function errorInfo(){
         return $this->db->errorCode();
     }
+    public function view($req){
+        $req = $this->db->query($req);
+        return $req ->fetchAll(PDO::FETCH_OBJ);
+    }
+
 }
