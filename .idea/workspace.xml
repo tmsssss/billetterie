@@ -2,25 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="952f336d-25ab-4c11-bedd-62eb73232c02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controller/cart.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/charge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/event.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cartModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/cartModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cartView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/cartView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/charge.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chargeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/chargeModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chargeView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/chargeView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eventModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/eventModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eventView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/eventView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/charge.php" beforeDir="false" afterPath="$PROJECT_DIR$/charge.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/event.php" beforeDir="false" afterPath="$PROJECT_DIR$/event.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/headerBis.php" beforeDir="false" afterPath="$PROJECT_DIR$/headerBis.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/indexModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/indexView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/cartView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/cartView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/indexView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/indexView.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,28 +23,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/charge.php">
+        <entry file="file://$PROJECT_DIR$/charge.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="84">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/index.php">
+        <entry file="file://$PROJECT_DIR$/event.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="63">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/event.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -64,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/headerBis.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="66" column="53" selection-start-line="66" selection-start-column="48" selection-end-line="66" selection-end-column="53" />
+              <caret line="66" column="42" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -78,12 +67,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controller/cart.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cart.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="63">
               <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addPanier.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SIO2_SABATIER_TOM.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-86" />
           </provider>
         </entry>
       </file>
@@ -125,6 +131,8 @@
         <option value="$PROJECT_DIR$/charge.php" />
         <option value="$PROJECT_DIR$/controller/index.php" />
         <option value="$PROJECT_DIR$/controller/cart.php" />
+        <option value="$PROJECT_DIR$/controller/charge.php" />
+        <option value="$PROJECT_DIR$/controller/event.php" />
       </list>
     </option>
   </component>
@@ -165,11 +173,6 @@
               <item name="billetterie" type="b2602c69:ProjectViewProjectNode" />
               <item name="billetterie" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="billetterie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="billetterie" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -184,6 +187,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/controller" />
       <recent name="$PROJECT_DIR$/model" />
       <recent name="$PROJECT_DIR$/view" />
@@ -219,7 +223,7 @@
       <workItem from="1553771598157" duration="1044000" />
       <workItem from="1554192481844" duration="533000" />
       <workItem from="1554711425407" duration="203000" />
-      <workItem from="1555858893341" duration="887000" />
+      <workItem from="1555858893341" duration="1132000" />
     </task>
     <task id="LOCAL-00001" summary="readme">
       <created>1553172384298</created>
@@ -249,21 +253,27 @@
       <option name="project" value="LOCAL" />
       <updated>1555858999078</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="MVC CHANGE">
+      <created>1555860207125</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1555860207125</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11148000" />
+    <option name="totallyTimeSpent" value="11393000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="977" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27103302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -309,12 +319,6 @@
     <entry file="file://$PROJECT_DIR$/_header.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/addPanier.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/billet.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Panier.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="683">
@@ -327,13 +331,7 @@
         <state relative-caret-position="-1053" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/algo.php" />
-    <entry file="file://$PROJECT_DIR$/SIO2_SABATIER_TOM.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/db.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
@@ -344,17 +342,10 @@
     <entry file="file://$PROJECT_DIR$/view/chargeView.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/event.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/headerBis.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="66" column="53" selection-start-line="66" selection-start-column="48" selection-end-line="66" selection-end-column="53" />
+          <caret line="66" column="42" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -365,27 +356,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/charge.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/product.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/checkout.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/cart.php">
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/billet.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addPanier.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SIO2_SABATIER_TOM.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-86" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/charge.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>

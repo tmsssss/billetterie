@@ -1,4 +1,4 @@
 <?php
 
-require '../model/cartModel.php';
-require '../view/cartView.php';
+require 'model/cartModel.php';
+require 'view/cartView.php';

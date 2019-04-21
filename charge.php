@@ -1,5 +1,5 @@
 <?php
 
-require '../model/chargeModel.php';
+require 'model/chargeModel.php';
 
-require '../view/chargeView.php';
+require 'view/chargeView.php';
