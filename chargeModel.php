@@ -242,12 +242,6 @@ for ($i = 0;$i < $billax;$i++) {
 
         $email->send();
 
-        if(!$email->send()) {
-            echo 'Message was not sent.';
-            echo 'Mailer error: ' . $email->ErrorInfo;
-        } else {
-            echo 'Message has been sent.';
-        }
     } catch (Exception $e) {
         echo $e->errorMessage(); //Pretty error messages from PHPMailer
 
