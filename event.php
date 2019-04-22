@@ -1,4 +1,4 @@
 <?php
 
-require 'model/eventModel.php';
-require 'view/eventView.php';
+require 'eventModel.php';
+require 'eventView.php';
