@@ -202,9 +202,9 @@ for ($i = 0;$i < $billax;$i++) {
 
         $file = $billet->output();
 
-        $createPath = '/billetterie/billet/commande_' . $command . '_' . htmlspecialchars($_POST['lastName']) . '_' . htmlspecialchars($_POST['firstName']) . '';
+        $createPath = '/home/agencelajv/billetterie/billet/commande_' . $command . '_' . htmlspecialchars($_POST['lastName']) . '_' . htmlspecialchars($_POST['firstName']) . '';
 
-        $path = '/billetterie/billet/commande_' . $command . '_' . htmlspecialchars($_POST['lastName']) . '_' . htmlspecialchars($_POST['firstName']) . '/billet(' . $numBillet++ . ')_' . $command . '.pdf';
+        $path = '/home/agencelajv/billetterie/billet/commande_' . $command . '_' . htmlspecialchars($_POST['lastName']) . '_' . htmlspecialchars($_POST['firstName']) . '/billet(' . $numBillet++ . ')_' . $command . '.pdf';
     }
         // Organisation dossier
         if (!file_exists($createPath)) {
