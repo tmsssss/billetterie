@@ -234,7 +234,7 @@ for ($i = 0;$i < $billax;$i++) {
         $email->isHTML(true); // Set email format to HTML
         $email->Subject = 'Votre billet !';
         $email->Body = 'This is the HTML message body <b>in bold!</b>';
-        $email->AltBody = 'bababang';
+        $email->AltBody = 'babanks';
 
         $email->send();
 
