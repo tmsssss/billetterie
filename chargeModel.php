@@ -21,22 +21,18 @@ $mail = htmlspecialchars($_POST['stripeEmail']);
 // User Info
 $firstName = htmlspecialchars($_POST['firstName']);
 $lastName = htmlspecialchars($_POST['lastName']);
-$address = htmlspecialchars($_POST['street']);
 $city = htmlspecialchars($_POST['city']);
-$zip = htmlspecialchars($_POST['zip']);
 $user_info = array(
     "Prénom" => $firstName,
     "Nom" => $lastName,
-    "Address" => $address,
-    "City" => $city,
-    "Zip Code" => $zip
+    "City" => $city
 );
 
 $customer = \Stripe\Customer::create(['email' => $mail, 'source' => $token, 'metadata' => $user_info]);
 
 $charge = \Stripe\Charge::create(['customer' => $customer->id, 'amount' => str_replace('.', '', $_GET['total']) , 'currency' => 'eur', 'description' => 'commande de ' . htmlspecialchars($_POST['firstName']) . '  ' .htmlspecialchars( $_POST['lastName']) . '']);
 $verif = $db->query('SELECT * FROM customers WHERE mail=:mail', array(
-    'mail' => htmlspecialchars($_POST['email'])
+    'mail' => htmlspecialchars($_SESSION['auth']['email'])
 ));
 // Verification si le client existe deja
 if ($verif)
@@ -50,13 +46,13 @@ else
     $customers = $db->query('INSERT INTO customers (last_name, first_name, mail, city) VALUES (:lastName,:firstName,:mail,:city)', array(
         'lastName' => htmlspecialchars($_POST['lastName']),
         'firstName' => htmlspecialchars($_POST['firstName']),
-        'mail' => htmlspecialchars($_POST['email']),
+        'mail' => htmlspecialchars($_SESSION['auth']['email']),
         'city' => htmlspecialchars($_POST['city'])
     ));
 }
 
 $keys = $db->query('SELECT id FROM customers WHERE mail=:mail', array(
-    'mail' => htmlspecialchars($_POST['email'])
+    'mail' => htmlspecialchars($_SESSION['auth']['email'])
 ));
 
 
@@ -202,9 +198,9 @@ for ($i = 0;$i < $billax;$i++) {
 
         $file = $billet->output();
 
-        $createPath = '/home/agencelajv/billetterie/billet/commande_' . $command . '_' . htmlspecialchars($_POST['lastName']) . '_' . htmlspecialchars($_POST['firstName']) . '';
+        $createPath = 'billet/commande_' . $command . '_' . htmlspecialchars($_POST['lastName']) . '_' . htmlspecialchars($_POST['firstName']) . '';
 
-        $path = '/home/agencelajv/billetterie/billet/commande_' . $command . '_' . htmlspecialchars($_POST['lastName']) . '_' . htmlspecialchars($_POST['firstName']) . '/billet(' . $numBillet++ . ')_' . $command . '.pdf';
+        $path = 'billet/commande_' . $command . '_' . htmlspecialchars($_POST['lastName']) . '_' . htmlspecialchars($_POST['firstName']) . '/billet(' . $numBillet++ . ')_' . $command . '.pdf';
     }
         // Organisation dossier
         if (!file_exists($createPath)) {

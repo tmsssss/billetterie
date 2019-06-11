@@ -63,6 +63,19 @@ if(!isset($_SESSION['panier'])){
             <ul class="header-links pull-left">
                 <li><a href="mailto:contact@agencelads.com"><i class="fa fa-envelope-o"></i> contact@agencelads.com</a></li>
                 <li><a href="https://urlz.fr/8OFM" target="_blank"><i class="fa fa-map-marker"></i>12 Allée du Grand Pavois, 34200 Sète</a></li>
+                <?php  if(isset($_SESSION['auth'])){ ?>
+                    <li><a href="index.php" style="margin-left: 400px"><i class="fas fa-users"></i><?= $_SESSION['auth']['email'];?></a></li>
+                    <li><a href="logout.php""><i class="fas fa-users"></i>Déconnection</a></li>
+
+                    <?php
+                } else{ ?>
+                    <li><a href="register.php" style="margin-left: 400px"><i class="fas fa-users"></i>S'inscrire</a></li>
+                    <li><a href="login.php"><i class="fas fa-sign-in-alt"></i>Se connecter</a></li>
+
+                <?php } ?>
+
+
+
             </ul>
         </div>
     </div>
@@ -97,6 +110,8 @@ if(!isset($_SESSION['panier'])){
                                 <div class="qty"><?= $panier->count() ?></div>
                                 <?php endif; ?>
                             </a>
+
+
 
 
                             <!-- /Cart -->

@@ -18,6 +18,7 @@ class ComposerStaticInit8a9b52867fc27cedaf05a34b044fa24b
         ),
         'P' => 
         array (
+            'PhpKit\\ExtPDO\\' => 14,
             'PHPMailer\\PHPMailer\\' => 20,
         ),
         'F' => 
@@ -43,6 +44,10 @@ class ComposerStaticInit8a9b52867fc27cedaf05a34b044fa24b
         'Stripe\\' => 
         array (
             0 => __DIR__ . '/..' . '/stripe/stripe-php/lib',
+        ),
+        'PhpKit\\ExtPDO\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-kit/ext-pdo/src',
         ),
         'PHPMailer\\PHPMailer\\' => 
         array (

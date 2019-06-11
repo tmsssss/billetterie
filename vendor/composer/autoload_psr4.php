@@ -9,6 +9,7 @@ return array(
     'chillerlan\\Settings\\' => array($vendorDir . '/chillerlan/php-settings-container/src'),
     'chillerlan\\QRCode\\' => array($vendorDir . '/chillerlan/php-qrcode/src'),
     'Stripe\\' => array($vendorDir . '/stripe/stripe-php/lib'),
+    'PhpKit\\ExtPDO\\' => array($vendorDir . '/php-kit/ext-pdo/src'),
     'PHPMailer\\PHPMailer\\' => array($vendorDir . '/phpmailer/phpmailer/src'),
     'Fpdf\\' => array($vendorDir . '/fpdf/fpdf/src/Fpdf'),
     'FontLib\\' => array($vendorDir . '/phenx/php-font-lib/src/FontLib'),

@@ -37,4 +37,10 @@ class DB{
         return $req ->fetchAll(PDO::FETCH_OBJ);
     }
 
+    public function queryBis($req,$arg){
+        $req = $this->db->prepare($req);
+        $req->execute($arg);
+        return $req->fetch();
+    }
+
 }

@@ -1,7 +1,23 @@
 <?php require 'header.php'; ?>
 
+<?php  if(!isset($_SESSION['auth'])){
 
-<!-- SECTION -->
+ ?>
+<div class="section">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+
+            <div class="col-md-7">
+                <!-- Billing Details -->
+                <div class="billing-details">
+                    <div class="section-title">
+                        <p class="title"> <a href="register.php"> Inscrivez vous </a> ou <a href="login.php"> Connectez-vous</a> pour reservez vos billets </p>
+                    </div>
+
+<?php }else{ ?>
+    <!-- SECTION -->
 <div class="section">
     <!-- container -->
     <div class="container">
@@ -26,20 +42,8 @@
                             <span class="symbol-input100"><i class="fa fa-user" aria-hidden="true"></i></span>
                         </div>
                         <div class="wrap-input100 validate-input form-group">
-                            <input class="input100" type="email" name="email" placeholder="Adresse mail" required>
-                            <span class="symbol-input100"><i class="far fa-envelope"></i></span>
-                        </div>
-                        <div class="wrap-input100 validate-input form-group">
-                            <input class="input100" type="text" name="street" placeholder="Rue" required>
-                            <span class="symbol-input100"><i class="fas fa-map-marker-alt"></i></span>
-                        </div>
-                        <div class="wrap-input100 validate-input form-group">
                             <input class="input100" type="text" name="city" placeholder="Ville" required>
                             <span class="symbol-input100"><i class="fas fa-map-marker-alt"></i></span>
-                        </div>
-                        <div class="wrap-input100 validate-input form-group">
-                            <input class="input100" type="text" name="zip" placeholder="Code postal" required>
-                            <span class="symbol-input100"><i class="fas fa-map-marker-alt"></i></i></span>
                         </div>
                         <div class="form-group">
                             <div class="input-checkbox">
@@ -171,4 +175,6 @@
 </script>
 
 
-<?php require 'footer.php'; ?>
+<?php require 'footer.php';
+}  ?>
+
