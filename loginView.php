@@ -57,7 +57,7 @@
                                     <!-- Billing Details -->
                                     <div class="billing-details">
                                         <div class="section-title">
-                                            <a href="index.php"><h3 class="title"> Retour a l'acceuil</h3> </a>
+                                            <a href="index.php"><h3 class="title"> Retour a l'accueil</h3> </a>
                                         </div>
 
 

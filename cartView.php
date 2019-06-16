@@ -109,11 +109,12 @@
                     <?php
                     endforeach;
                 endforeach;
-                if(isset($_POST['promo']) && $_POST['promo']  == 'SV14'){
+                if(isset($_POST['promo']) && $_POST['promo']  == 'SIO'){
                     ?>
                     <div style="font-size : 20px;">
                         <div> CODE PROMO : <?= '   ' .htmlspecialchars($_POST['promo']) ?> -<?= number_format($total * 0.20, 2) ?> €</div>
                     </div>
+
 
                 <?php } ?>
 
@@ -143,7 +144,7 @@
                     foreach ($prices as $price) {
                         $total += $price->price * $_SESSION['panier'][$price->id];
                     }
-                    if(isset($_POST['promo']) && $_POST['promo'] == 'SV14') {
+                    if(isset($_POST['promo']) && $_POST['promo'] == 'SIO') {
                         $total = $total - $total * 0.20;
                     }
                     ?>

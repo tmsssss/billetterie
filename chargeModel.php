@@ -17,7 +17,7 @@ function str_random($length){
 }
 
 $token = htmlspecialchars($_POST['stripeToken']);
-$mail = htmlspecialchars($_POST['stripeEmail']);
+$mail = htmlspecialchars($_SESSION['auth']['email']);
 // User Info
 $firstName = htmlspecialchars($_POST['firstName']);
 $lastName = htmlspecialchars($_POST['lastName']);

@@ -65,20 +65,10 @@
                 <div class="product-details">
                     <h2 class="product-name"><?= $event->name; ?></h2>
                     <div>
-                        <div class="product-rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <a class="review-link" href="#">10 Review(s) | Add your review</a>
                     </div>
                     <div>
-                        <h3 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h3>
-                        <span class="product-available">In Stock</span>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p><?= $event->content ?></p>
                 </div>
             </div>
         </div>
@@ -119,9 +109,26 @@
 
 
 
-                endforeach; // FAIRE LES BOUTONS INCREMENT DECREMENT ?>
+                endforeach;
+                ?>
+                 <!-- EXAM -->
+                <table style="font-size: 18px">
+
+                <tr>
+                    <th scope="col">Type </th>
+                    <th scope="col"> Prix Moyen</th>
                 </tr>
-                </tbody>
+                <?php
+                $types = getAveragePrice();
+                foreach ($types as $type){?>
+                <tr>
+                    <th scope="row"><?= $type->lib ?> </th>
+                    <td> <?= number_format($type->PrixMoyen,2) . "€<br>" ?></td>
+                </tr>
+
+                <?php
+                }
+                ?>
                 </table>
                 <div class="container">
                     <div class="row">

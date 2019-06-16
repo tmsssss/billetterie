@@ -19,7 +19,7 @@ foreach ($prices as $price) {
     $events = $db->query('SELECT name FROM events WHERE id =:id', array('id' => $price->id_event));
 }
 // Gestion code promo
-if(isset($_POST['promo']) && $_POST['promo'] == 'SV14') {
+if(isset($_POST['promo']) && $_POST['promo'] == 'SIO') {
     $total = $total - number_format($total * 0.20, 2);
 }
 
