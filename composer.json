@@ -11,7 +11,7 @@
   ],
   "require": {
     "stripe/stripe-php": "v6.30.0",
-    "dompdf/dompdf": "v0.8.3",
+    "dompdf/dompdf": "v2.0.0",
     "phpmailer/phpmailer": "v6.0.7",
     "chillerlan/php-qrcode": "3.0.3",
     "php-kit/ext-pdo": "1.1.3"
